@@ -5,21 +5,14 @@ html {
   color: black;
 }
 
+/*Header Section*/
 .banner-img {
   background: url("../images/glasses-bg.png") top center / cover;
   height: 31rem;
   padding-top: 1rem;
 }
 
-nav {
-  width: 960px;
-  background-color: cadetblue;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
-}
-
+/*Subheader Logo Area*/
 .logo-cont {
   display: inline-flex;
   align-items: center;
@@ -36,6 +29,16 @@ nav {
   display: inline-flex;
 }
 
+/*Menu*/
+nav {
+  width: 960px;
+  background-color: cadetblue;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .links-cont {
   display: inline-flex;
   padding: 1rem 0;
@@ -48,6 +51,7 @@ nav {
   padding-right: 2rem;
 }
 
+/*White Box*/
 .white-box-cont {
   width: 960px;
   margin: 0 auto;
@@ -69,6 +73,7 @@ nav {
   line-height: 1.2;
 }
 
+/*Body Section*/
 .body-cont {
   width: 960px;
   margin: 0 auto;
@@ -112,8 +117,10 @@ nav {
 .box p {
   display: inline-flex;
   text-align: center;
+  line-height: 1.3;
 }
 
+/*Content Section*/
 .text-content {
   display: flex;
   width: 960px;
@@ -152,6 +159,7 @@ nav {
   line-height: 1.5;
 }
 
+/*Footer Section*/
 footer {
   width: 960px;
   display: flex;
@@ -168,11 +176,13 @@ footer {
     font-size: 0.75rem;
   }
 
-@media only screen and (max-width: 960px) {
+/*First Breakpoint*/
+@media only screen and (max-width: 970px) {
 
+  /*Header Section*/
   .banner-img {
-      padding-top: 0;
-      height: 22rem;
+    padding-top: 0;
+    height: 22rem;
   }
 
   nav {
@@ -192,10 +202,12 @@ footer {
     font-size: 1.5rem;
   }
 
+  /*Body Section*/
   .body-cont {
     width: 100%;
   }
 
+  /*Content Section*/
   .text-content {
     width: 80%;
   }
@@ -209,14 +221,125 @@ footer {
     width: 80%;
   }
 
+  /*Footer Section*/
   footer {
     width: 100%;
   }
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 675px) {
 
+  /*Header Section*/
+  .logo-cont p {
+    display: none;
+  }
 
+  .banner-img {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .logo-cont {
+    padding: 0.75rem 0;
+  }
+
+  /*Menu*/
+  .links-cont ul {
+    display: none;
+  }
+
+  /*White Box*/
+  .white-box-cont {
+    width: 100%;
+    margin-top: 9rem;
+  }
+
+  .white-box {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .white-box p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /*Body Section*/
+  .icons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3.77rem 0;
+  }
+
+  .icon-cont {
+    height: 3rem;
+  }
+
+  .comp .icon-cont img {
+    padding: 0;
+  }
+
+  .box {
+    margin-bottom: 2.54rem;
+    height: auto;
+  }
+
+  .box.comp {
+    padding: 0;
+    width: 7rem;
+    align-items: center;
+  }
+
+  .box.fast {
+    margin-bottom: 0;
+  }
+
+  .box p {
+    text-align: center;
+    width: 100%;
+    font-size: 0.77rem;
+    margin-top: 1.8rem;
+  }
+
+  .box.cust p {
+    margin-top: 0.15rem;
+  }
+
+  .box.fast p {
+    margin-top: 0.6rem;
+  }
+
+  /*Content Section*/
+  .text-content {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+
+  .text-cont {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .title p {
+    margin-left: 0;
+  }
+
+  .text {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .text p {
+    margin: 1rem 0 4rem;
+  }
 
 }
